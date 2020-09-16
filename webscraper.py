@@ -28,7 +28,7 @@ for content in contents:
             data.append((college_name, course_title, level_of_study, start_date, duration, tuition_fee))
 
 
-with open('course.csv', mode='w') as csv_file:
+with open('webscraper_output.csv', mode='w') as csv_file:
     fieldnames = ['College Name', 'Course Title', 'Level of Study', 'Intakes', 'Duration', 'Tuition Fee']
     writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
     writer.writeheader()
